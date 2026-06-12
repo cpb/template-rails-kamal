@@ -1,0 +1,10 @@
+_min_copier_version: "9"
+
+service_name:
+  type: str
+  help: Short service name — Kamal service id, Docker image name, GitHub repo name.
+
+subdomain:
+  type: str
+  help: Subdomain under cpb.ca (e.g. fizzbuzz → fizzbuzz.cpb.ca).
+  default: "{{ service_name }}"
